@@ -135,9 +135,9 @@
 				<PsychicEntropyMaxOffset>10</PsychicEntropyMaxOffset>
 				<VPE_PsyfocusCostFactor>0.25</VPE_PsyfocusCostFactor>
 				<PsychicEntropyGain>0.25</PsychicEntropyGain>
-				<VEF_RangedCooldownFactor>0.10</VEF_RangedCooldownFactor>
-				<VEF_MeleeAttackSpeedFactor>10</VEF_MeleeAttackSpeedFactor>
-				<VEF_RangeAttackSpeedFactor>10</VEF_RangeAttackSpeedFactor>
+				<RangedCooldownFactor >0.10</RangedCooldownFactor >
+				<MeleeCooldownFactor>0.10</MeleeCooldownFactor>
+				<RangedCooldownFactor>0.10</RangedCooldownFactor>
 				<VEF_MeleeAttackDamageFactor>3</VEF_MeleeAttackDamageFactor>
 				<VEF_RangeAttackDamageFactor>3</VEF_RangeAttackDamageFactor>
 				<WorkSpeedGlobal>10</WorkSpeedGlobal>
@@ -222,9 +222,8 @@
 				<PsychicEntropyMaxOffset>100</PsychicEntropyMaxOffset>
 				<VPE_PsyfocusCostFactor>0.01</VPE_PsyfocusCostFactor>
 				<PsychicEntropyGain>0.01</PsychicEntropyGain>
-				<VEF_RangedCooldownFactor>0</VEF_RangedCooldownFactor>
-				<VEF_MeleeAttackSpeedFactor>100</VEF_MeleeAttackSpeedFactor>
-				<VEF_RangeAttackSpeedFactor>100</VEF_RangeAttackSpeedFactor>
+				<MeleeCooldownFactor>0.01</MeleeCooldownFactor>
+				<RangedCooldownFactor>0.01</RangedCooldownFactor>
 				<VEF_MeleeAttackDamageFactor>10</VEF_MeleeAttackDamageFactor>
 				<VEF_RangeAttackDamageFactor>10</VEF_RangeAttackDamageFactor>
 				<WorkSpeedGlobal>100</WorkSpeedGlobal>
