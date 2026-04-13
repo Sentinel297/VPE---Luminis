@@ -6,7 +6,7 @@
 <GameConditionDef>
     <defName>VPE_SolarRiftSTNL</defName>
     <conditionClass>VPE_Luminis.GameCondition_SolarRift</conditionClass>
-    <label>Solar Rift</label>
+    <label>Solar rift</label>
     <description>A rift connected to the sun is in space, it acts as a second sun.</description>
     <!-- <weatherDef>VPE_NoctisApocalypsisSTNL</weatherDef> -->
     <canBePermanent>true</canBePermanent>
@@ -19,7 +19,7 @@
 <GameConditionDef>
     <defName>VPE_NoctisApocalypsisSTNL</defName>
     <conditionClass>VPE_Luminis.GameCondition_NoctisApocalypsis</conditionClass>
-    <label>Noctis Apocalypsis</label>
+    <label>Noctis apocalypsis</label>
     <description>The world's light has been consumed by a Luminis psycaster, light will eventually return after some time.\nSolar Rift will not work as long as this condition is active.</description>
     <weatherDef>VPE_NoctisApocalypsisSTNL</weatherDef>
     <canBePermanent>true</canBePermanent>
@@ -29,7 +29,7 @@
   
   <WeatherDef>
     <defName>VPE_NoctisApocalypsisSTNL</defName>
-    <label>Night Of The Apocalypse</label>
+    <label>Night of the apocalypse</label>
     <description>There is no natural light in the world.</description>
     <snowRate>0</snowRate>
     <windSpeedFactor>1</windSpeedFactor>
@@ -48,25 +48,25 @@
     </overlayClasses>
     <!-- Colors are Overcast -->
     <skyColorsDay>
-      <sky>(0.0,0.0,0.0)</sky>
+      <sky>(0.1,0.1,0.1)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>
     </skyColorsDay>
     <skyColorsDusk>
-      <sky>(0.0,0.0,0.0)</sky>
+      <sky>(0.1,0.1,0.1)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>
     </skyColorsDusk>
     <skyColorsNightEdge>
-      <sky>(0.0,0.0,0.0)</sky>
+      <sky>(0.1,0.1,0.1)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>
     </skyColorsNightEdge>
     <skyColorsNightMid>
-      <sky>(0.0,0.0,0.0)</sky>
+      <sky>(0.1,0.1,0.1)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>
@@ -78,7 +78,7 @@
   <GameConditionDef>
     <defName>VPE_EternalNightSTNL</defName>
     <conditionClass>VPE_Luminis.GameCondition_LastLight</conditionClass>
-    <label>Aeterna Noctis</label>
+    <label>Aeterna noctis</label>
     <description>The light of the universe has been depleted, stars are dim and weak, solar pinholes will fail for the duration of this condition.</description>
     <weatherDef>VPE_EternalNightSTNL</weatherDef>
     <canBePermanent>true</canBePermanent>
@@ -88,7 +88,7 @@
   
   <WeatherDef>
     <defName>VPE_EternalNightSTNL</defName>
-    <label>Eternal Night</label>
+    <label>Eternal night</label>
     <description>There is no natural light in the world.</description>
     <snowRate>0</snowRate>
     <windSpeedFactor>1</windSpeedFactor>
@@ -107,25 +107,25 @@
     </overlayClasses>
     <!-- Colors are Overcast -->
     <skyColorsDay>
-      <sky>(0.0,0.0,0.0)</sky>
+      <sky>(0.1,0.1,0.1)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>
     </skyColorsDay>
     <skyColorsDusk>
-      <sky>(0.0,0.0,0.0)</sky>
+      <sky>(0.1,0.1,0.1)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>
     </skyColorsDusk>
     <skyColorsNightEdge>
-      <sky>(0.0,0.0,0.0)</sky>
+      <sky>(0.1,0.1,0.1)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>
     </skyColorsNightEdge>
     <skyColorsNightMid>
-      <sky>(0.0,0.0,0.0)</sky>
+      <sky>(0.1,0.1,0.1)</sky>
       <shadow>(0.92,0.92,0.92)</shadow>
       <overlay>(1,1,1)</overlay>
       <saturation>0.9</saturation>

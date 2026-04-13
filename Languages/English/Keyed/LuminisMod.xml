@@ -24,4 +24,7 @@
     <ApocalypsisFurariAnomalyDarknessDescSTNL>If enabled, the mentioned abilities will cause the Unnatural Darkness event instead of their own night condition.\n\nDisclaimer: Vanilla Unnatural Darkness only harms player controlled pawns.</ApocalypsisFurariAnomalyDarknessDescSTNL>
   <!-- Slider Label -->
   <ApocalypsisLuminisGoodwillEffectSTNL>Goodwill change per use: {0}</ApocalypsisLuminisGoodwillEffectSTNL>
+  
+  <VPE_Luminis_UltimaLuminis_V2Visuals_STNL>Ultima luminis: Use alt visuals? (Bright lights warning!):</VPE_Luminis_UltimaLuminis_V2Visuals_STNL>
+  <VPE_Luminis_UltimaLuminis_ScorchGroundToggleText_STNL>Ultima luminis: Should the affected area become a permanent lava pool? (Odyssey required):</VPE_Luminis_UltimaLuminis_ScorchGroundToggleText_STNL>
 </LanguageData>

@@ -1,7 +1,7 @@
 <Defs>
 	<HediffDef>
 		<defName>VPE_RadiantBeaconSTNL</defName>
-		<label>Radiant Beacon</label>
+		<label>Radiant beacon</label>
 		<description>This person is emitting soothing pulses of light that will heal nearby allies.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1</initialSeverity>
@@ -70,13 +70,14 @@
 
 <ThingDef>
 	<defName>LightOfExtinctionLightSTNL</defName>
-	<label>Light Of Extinction</label>
-	<thingClass>ThingWithComps</thingClass>
+	<label>Light of extinction</label>
+	<thingClass>VPE_Luminis.LightOfExtinction</thingClass>
 	<graphicData>
 		<texPath>UI_LuminisSTNL/None</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<selectable>false</selectable>
+	<tickerType>Normal</tickerType>
 	<comps>
 		<li Class="CompProperties_Glower">
 		    <glowRadius>20</glowRadius>
@@ -88,7 +89,7 @@
 
 <HediffDef>
 	<defName>VPE_LightOfTheWorldSTNL</defName>
-	<label>Light Of Extinction</label>
+	<label>Light of extinction</label>
 	<description>This person has stolen light from the world and is converting it into pure energy to reach a temporary state of unprecedented power, greatly enhancing their capabilities for a short duration.</description>
 	<hediffClass>HediffWithComps</hediffClass>
 	<initialSeverity>1</initialSeverity>
@@ -110,7 +111,7 @@
 			<stateEffecter>VPE_SparksYellow</stateEffecter>
 		</li>
 		<li Class="VPE_Luminis.HediffCompProperties_Glower">
-			<buildingDef>LightOfExtinctionLightSTNL</buildingDef>
+			<lightDef>LightOfExtinctionLightSTNL</lightDef>
 		</li>
 	</comps>
 	<stages>
@@ -149,11 +150,12 @@
 <ThingDef>
 	<defName>EternalLightSTNL</defName>
 	<label>Eternal Light</label>
-	<thingClass>ThingWithComps</thingClass>
+	<thingClass>VPE_Luminis.LightOfExtinction</thingClass>
 	<graphicData>
 		<texPath>UI_LuminisSTNL/None</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
+		<tickerType>Normal</tickerType>
 	<selectable>false</selectable>
 	<comps>
 		<li Class="CompProperties_Glower">
@@ -184,7 +186,7 @@
 			<stateEffecter>VPE_AeternaLuminisSTNL</stateEffecter>
 		</li>
 		<li Class="VPE_Luminis.HediffCompProperties_Glower">
-			<buildingDef>EternalLightSTNL</buildingDef>
+			<lightDef>EternalLightSTNL</lightDef>
 		</li>
 	</comps>
 	<stages>

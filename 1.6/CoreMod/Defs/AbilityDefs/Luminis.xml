@@ -6,7 +6,7 @@
     
 	<ThingDef ParentName="EtherealThingBase">
     <defName>VPE_GreaterSolarPinholeSTNL</defName>
-    <label>Greater Solar Pinhole</label>
+    <label>Greater solar pinhole</label>
     <thingClass>ThingWithComps</thingClass>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
@@ -49,7 +49,7 @@
   
   <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>VPE_GreaterSolarPinholeSTNL</defName>
-    <label>Greater Solar Pinhole</label>
+    <label>Greater solar pinhole</label>
     <description>Form a miniature portal directly linked to the nearest star, this pinhole will allow more light to pass through, allowing for plant growth. This portal is large enough to persist and will remain until manually dispersed at the cost of letting out a lot more heat than a standard solar pinhole.</description>
     <iconPath>UI_LuminisSTNL/Abilities/Luminis/GreaterSolarPinhole</iconPath>
     <abilityClass>VEF.Abilities.Ability_Spawn</abilityClass>
@@ -93,7 +93,7 @@
    
   <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
     <defName>VPE_BlindingFlashSTNL</defName>
-    <label>Blinding Flash</label>
+    <label>Blinding flash</label>
     <description>Generate a bright explosion of light that will temporarily blind and disorient the targets, stunning them for a few seconds as their vision returns to normal. \n\nDuration of the stun scales with psychic sensitivity.</description>
     <iconPath>UI_LuminisSTNL/Abilities/Luminis/BlindingFlash</iconPath>
     <abilityClass>VPE_Luminis.Ability_BlindingFlash</abilityClass>
@@ -129,7 +129,7 @@
   
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_FlashSkipSTNL</defName>
-	<label>Flash Skip</label>
+	<label>Flash skip</label>
 	<description>Turn yourself into a beam of light and dash to the target location, any creature caught in the radius will become stunned for a short time.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/FlashSkip</iconPath>
 	<abilityClass>VPE_Luminis.Ability_FlashSkip</abilityClass>
@@ -159,7 +159,7 @@
 
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_SavingLightSTNL</defName>
-	<label>Saving Light</label>
+	<label>Saving light</label>
 	<description>Form bandages made out of pure light around the target's wounds to tend them.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SavingLight</iconPath>
 	<castTime>60</castTime>
@@ -199,7 +199,7 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_SolarFlareSTNL</defName>
-	<label>Solar Flare</label>
+	<label>Solar flare</label>
 	<description>Provoke a solar eruption in a nearby star and redirect the electromagnetic radiation to the local area, disabling electronics for a day.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SolarFlare</iconPath>
 	<showUndrafted>true</showUndrafted>
@@ -234,7 +234,7 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_SolarRiftSTNL</defName>
-	<label>Solar Rift</label>
+	<label>Solar rift</label>
 	<description>Create a massive rift in the sky that is directly connected to the sun, the rift will allow sunlight to pass through, resulting in global daytime.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SolarRift</iconPath>
 	<showUndrafted>true</showUndrafted>
@@ -314,7 +314,7 @@
 	
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_RadiantBeaconSTNL</defName>
-	<label>Radiant Beacon</label>
+	<label>Radiant beacon</label>
 	<description>Release pulses of soothing psychic energy every half second, these pulses will heal nearby allies while prioritizing bleeding wounds.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/RadiantBeacon</iconPath>
 	<castTime>60</castTime>
@@ -361,7 +361,7 @@
 	
 	<ThingDef ParentName="OrbitalStrikeBase">
     <defName>LuminisSolarBeamSTNL</defName>
-    <label>Sunbeam</label>
+    <label>Sun beam</label>
     <thingClass>VPE_Luminis.LuminisSolarBeamSTNL</thingClass>
     <comps>
       <li Class="CompProperties_OrbitalBeam">
@@ -385,7 +385,7 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_SunBeamSTNL</defName>
-	<label>Sun Beam</label>
+	<label>Sun beam</label>
 	<description>Form a controlled massive solar eruption at the target location to scorch the area.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SunBeam</iconPath>
 	<castTime>120</castTime>
@@ -426,7 +426,7 @@
 	
     	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_FurariLuminisSTNL</defName>
-		<label>Furari Luminis</label>
+		<label>Furari luminis</label>
 		<description>Absorb the light of the world and convert it into pure energy to massively empower yourself for a short time, the world will become void of natural light for a day following the use of this ability. Furari Luminis will be unavailable during this time.</description>
 		<iconPath>UI_LuminisSTNL/Abilities/Luminis/FurariLuminis</iconPath>
 		<castTime>120</castTime>
@@ -464,7 +464,7 @@
 
 	<VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_ApocalypsisLuminisSTNL</defName>
-		<label>Apocalypsis Luminis</label>
+		<label>Apocalypsis luminis</label>
 		<description>Absorb the light of the world and unleash it in the form of a devastating cataclysm, the world will become void of natural light for a day following the use of this ability. Apocalypsis Luminis will be unavailable during this time.</description>
 		<iconPath>UI_LuminisSTNL/Abilities/Luminis/ApocalypsisLuminis</iconPath>
 		<castTime>200</castTime>
@@ -504,8 +504,8 @@
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_UltimaLuminisSTNL</defName>
-	<label>Ultima Luminis</label>
-	<description>Absorb the light of the universe and annihilate the target area with a super-massive cataclysm of pure light capable of destroying even heat resisting creatures, the universe will become void of natural light for a quadrum following the use of this ability. Ultima Luminis will be unavailable during this time.\n\nSolar Pinholes will fail for the duration of this condition.</description>
+	<label>Ultima luminis</label>
+	<description>Absorb the light of the universe and annihilate the target area with a super-massive cataclysm of pure light capable of destroying even heat resisting creatures, the universe will become void of natural light for a quadrum following the use of this ability. Ultima Luminis will be unavailable during this time.\n\nSolar pinholes will fail for the duration of this condition.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/UltimaLuminis</iconPath>
 	<castTime>200</castTime>
 	<durationTime>900000</durationTime>
@@ -516,7 +516,7 @@
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
 	<abilityClass>VPE_Luminis.Ability_UltimaLuminis</abilityClass>
-	<castSound>PsycastPsychicPulse</castSound>
+	<castSound>Explosion_Thump</castSound>
 	<!-- <fleckOnTarget>PsychicRitual_Complete</fleckOnTarget> -->
 	<targetingParameters>
 		<canTargetLocations>True</canTargetLocations>
@@ -540,11 +540,10 @@
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
 
-
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_AeternaLuminisSTNL</defName>
-		<label>Aeterna Luminis</label>
-		<description>Absorb the light of the universe and convert it into pure energy to reach a state of near immortality, the universe will become void of natural light for as long as the caster maintains their hold over it.\n\nSolar Pinholes will fail for the duration of this condition.</description>
+		<label>Aeterna luminis</label>
+		<description>Absorb the light of the universe and convert it into pure energy to reach a state of near immortality, the universe will become void of natural light for as long as the caster maintains their hold over it.\n\nSolar pinholes will fail for the duration of this condition.</description>
 		<iconPath>UI_LuminisSTNL/Abilities/Luminis/AeternaLuminis</iconPath>
 		<castTime>120</castTime>
 		<targetMode>Self</targetMode>
