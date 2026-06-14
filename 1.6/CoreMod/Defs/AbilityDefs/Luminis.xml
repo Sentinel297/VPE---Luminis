@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-    
 	
 	<!-- Level 1 -->
     
@@ -194,7 +193,6 @@
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
 
-
 	<!-- Level 4 -->
 	
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
@@ -204,14 +202,17 @@
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SolarFlare</iconPath>
 	<showUndrafted>true</showUndrafted>
 	<durationTime>60000</durationTime>
+	<durationTimeStatFactors>
+	<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
 	<castTime>120</castTime>
 	<targetMode>Self</targetMode>
-	<chance>0</chance>
+	<!-- <chance>0</chance> -->
 	<radius>0</radius>
 	<range>0</range>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
-	<abilityClass>VPE_Luminis.Ability_SavingLight</abilityClass>
+	<abilityClass>SentinelFramework_STNL.Ability_ForceCondition</abilityClass>
 	<castSound>Psycast_Neuroquake_Effect</castSound>
 	<modExtensions>
 		<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
@@ -224,10 +225,11 @@
 				<li>VPE_SavingLightSTNL</li>
 			</prerequisites>
 		</li>
-		<li Class="VanillaPsycastsExpanded.AbilityExtension_GameCondition">
-			<gameCondition>SolarFlare</gameCondition>
-			<durationDays>1</durationDays>
-			<sendLetter>false</sendLetter>
+		<li Class="SentinelFramework_STNL.AbilityForceCondiExt">
+			<conditionDef>SolarFlare</conditionDef>
+			<global>false</global>
+			<scaleDuraWithSensi>True</scaleDuraWithSensi>
+			<aiCanUse>false</aiCanUse>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
@@ -240,13 +242,16 @@
 	<showUndrafted>true</showUndrafted>
 	<castTime>180</castTime>
 	<durationTime>60000</durationTime>
+	<durationTimeStatFactors>
+		<PsychicSensitivity>1</PsychicSensitivity>
+	</durationTimeStatFactors>
 	<targetMode>Self</targetMode>
-	<chance>0</chance>
+	<!-- <chance>0</chance> -->
 	<radius>0</radius>
 	<range>0</range>
 	<needsTicking>true</needsTicking>
 	<goodwillImpact>0</goodwillImpact>
-	<abilityClass>VPE_Luminis.Ability_SolarRift</abilityClass>
+	<abilityClass>SentinelFramework_STNL.Ability_ForceCondition</abilityClass>
 	<castSound>VPE_SeasonTimeskip_Cast</castSound>
 	<!-- <fleckOnTarget>PsychicRitual_Complete</fleckOnTarget> -->
 	<targetingParameters>
@@ -267,6 +272,14 @@
 			<prerequisites>
 				<li>VPE_SavingLightSTNL</li>
 			</prerequisites>
+		</li>
+		<li Class="SentinelFramework_STNL.AbilityForceCondiExt">
+			<conditionDef>VPE_SolarRiftSTNL</conditionDef>
+			<global>false</global>
+			<scaleDuraWithSensi>True</scaleDuraWithSensi>
+			<aiCanUse>true</aiCanUse>
+			<fleckDef>PsycastSkipFlashEntry</fleckDef>
+			<fleckSize>999</fleckSize>
 		</li>
 	</modExtensions>
 </VEF.Abilities.AbilityDef>
