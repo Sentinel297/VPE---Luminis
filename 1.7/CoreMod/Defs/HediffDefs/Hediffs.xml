@@ -1,35 +1,56 @@
 <Defs>
-	<HediffDef>
-		<defName>VPE_RadiantBeaconSTNL</defName>
-		<label>Radiant beacon</label>
-		<description>This person is emitting soothing pulses of light that will heal nearby allies.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<initialSeverity>1</initialSeverity>
-		<minSeverity>0</minSeverity>
-		<maxSeverity>1</maxSeverity>
-		<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
-		<makesSickThought>False</makesSickThought>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
-		<everCurableByItem>false</everCurableByItem>
-		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
-		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>10000</disappearsAfterTicks>
-				<showRemainingTime>True</showRemainingTime>
-			</li>
-			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-			<li Class="VPE_Luminis.HediffCompProperties_RadiantBeacon">
+<ThingDef>
+	<defName>VPE_Luminis_RadiantBeacon_Radiance_STNL</defName>
+	<label>Radiance beacon</label>
+	<thingClass>VPE_Luminis.LightOfExtinction</thingClass>
+	<graphicData>
+		<texPath>UI_LuminisSTNL/None</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+    <category>Ethereal</category>
+	<selectable>false</selectable>
+	<tickerType>Normal</tickerType>
+	<comps>
+		<li Class="CompProperties_Glower">
+		    <glowRadius>8</glowRadius>
+			<overlightRadius>6</overlightRadius>
+			<glowColor>(255,255,255,0)</glowColor>
+		</li>
+	</comps>
+</ThingDef>
+
+<HediffDef>
+	<defName>VPE_RadiantBeaconSTNL</defName>
+	<label>Radiant beacon</label>
+	<description>This person is emitting soothing pulses of light that will heal nearby allies.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 1)</defaultLabelColor>
+	<makesSickThought>False</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<comps>
+		<li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>10000</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		<li Class="VPE_Luminis.HediffCompProperties_LightSpawnerConditional"/>
+		<li Class="VPE_Luminis.HediffCompProperties_RadiantBeacon">
 			<healRadius>5</healRadius>
 			<healInterval>30</healInterval>
 			<healAmount>2.5</healAmount>
-			</li>
-		</comps>
-		<stages>
-			<li>
 		</li>
-		</stages>
-	</HediffDef>
+	</comps>
+	<stages>
+		<li>
+		</li>
+	</stages>
+</HediffDef>
 	
 <HediffDef>
 	<defName>VPE_EnlightenementSTNL</defName>
@@ -66,6 +87,117 @@
 			</statFactors>
 		</li>
 	</stages>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Luminis_LightFocus_STNL</defName>
+	<label>Light focus</label>
+	<description>This creature draws power from ambient light, allowing it to passively regenerate missing psyfocus as if it were meditating.</description>
+	<hediffClass>VPE_Luminis.Hediff_LightFocus</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<!-- <li> -->
+		<!-- <capMods> -->
+		<!-- <li> -->
+		<!-- <capacity>Consciousness</capacity> -->
+		<!-- <postFactor>1.5</postFactor> -->
+		<!-- </li> -->
+		<!-- </capMods> -->
+		<!-- <statFactors> -->
+		<!-- <GlobalLearningFactor>2</GlobalLearningFactor> -->
+		<!-- <PsychicSensitivity>2</PsychicSensitivity> -->
+		<!-- </statFactors> -->
+		<!-- </li> -->
+	</stages>
+	<comps>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>10000</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>True</showRemainingTime> -->
+		<!-- </li> -->
+		<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Luminis_LightRegeneration_Core_STNL</defName>
+	<label>Light regeneration coma</label>
+	<description>This creature's body is currently being repaired by photophagic mechanites, these mechanites will work faster in areas with a higher light level.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<li>
+			<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<setMax>0.05</setMax>
+				</li>
+			</capMods>
+		</li>
+	</stages>
+	<comps>
+		<li Class="VPE_Luminis.HediffCompProperties_WoundRegenerator">
+			<partRegenHediffDef>VPE_Luminis_LightRegeneration_PartHediff_STNL</partRegenHediffDef>
+		</li>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>10000</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>True</showRemainingTime> -->
+		<!-- </li> -->
+		<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+	</comps>
+</HediffDef>
+
+<HediffDef>
+	<defName>VPE_Luminis_LightRegeneration_PartHediff_STNL</defName>
+	<label>Light regeneration</label>
+	<description>This creature's wounds are being treated by microscopic photophagic nanites.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<initialSeverity>1</initialSeverity>
+	<minSeverity>0</minSeverity>
+	<maxSeverity>1</maxSeverity>
+	<defaultLabelColor>(1, 1, 0)</defaultLabelColor>
+	<makesSickThought>false</makesSickThought>
+	<scenarioCanAdd>false</scenarioCanAdd>
+	<isBad>false</isBad>
+	<everCurableByItem>false</everCurableByItem>
+	<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+	<stages>
+		<!-- <li> -->
+		<!-- <capMods> -->
+		<!-- <li> -->
+		<!-- <capacity>Consciousness</capacity> -->
+		<!-- <postFactor>1.5</postFactor> -->
+		<!-- </li> -->
+		<!-- </capMods> -->
+		<!-- <statFactors> -->
+		<!-- <GlobalLearningFactor>2</GlobalLearningFactor> -->
+		<!-- <PsychicSensitivity>2</PsychicSensitivity> -->
+		<!-- </statFactors> -->
+		<!-- </li> -->
+	</stages>
+	<comps>
+			<li Class="VPE_Luminis.HediffCompProperties_DisappearsFasterInLight"/>
+		<!-- <li Class="HediffCompProperties_Disappears"> -->
+		<!-- <disappearsAfterTicks>10000</disappearsAfterTicks> -->
+		<!-- <showRemainingTime>True</showRemainingTime> -->
+		<!-- </li> -->
+		<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+	</comps>
 </HediffDef>
 
 <ThingDef>

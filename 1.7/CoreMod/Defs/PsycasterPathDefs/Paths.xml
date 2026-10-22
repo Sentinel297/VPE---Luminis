@@ -3,10 +3,10 @@
 	<VanillaPsycastsExpanded.PsycasterPathDef>
 		<defName>VPE_LuminisSTNL</defName>
 		<label>Luminis</label>
-		<description>Weave the light in the world to manifest various psychic phenomena.</description>
+		<description>Luminis psycasters manipulate photophagic nanites to alter the world around them. These nanites are usually handled in low density, negating most chances of any consequences from feeding them ambient light, should their population reach a critical level, they would cover the world in darkness.</description>
 		<background>UI_LuminisSTNL/Tree/LuminisTreeBase</background>
 		<altBackground>UI_LuminisSTNL/Tree/LuminisTreeBase</altBackground>
 		<tab>Misc</tab>
-		<tooltip>Weave the light in the world to manifest various psychic phenomena.</tooltip>
+		<tooltip>Luminis psycasters manipulate photophagic nanites to alter the world around them. These nanites are usually handled in low density, negating most chances of any consequences from feeding them ambient light, should their population reach a critical level, they would cover the world in darkness.</tooltip>
 	</VanillaPsycastsExpanded.PsycasterPathDef>
 </Defs>
