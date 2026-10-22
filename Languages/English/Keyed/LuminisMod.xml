@@ -10,6 +10,8 @@
 	<LastLightSolarPinholeClosedSTNL>A solar pinhole has been consumed.</LastLightSolarPinholeClosedSTNL>
 	<RemoveEternalLightSTNL>Restore the light of the universe</RemoveEternalLightSTNL>
 	<RemoveEternalLightDescSTNL>Stop converting light into energy.</RemoveEternalLightDescSTNL>
+	<!-- ====Radiant Beacon==== -->
+	<VPE_Luminis_RadiantBeacon_End_STNL>End {0}</VPE_Luminis_RadiantBeacon_End_STNL>
 	<!-- ====Mod Settings==== -->
 	<ApocalypsisLuminisSTNL>Apocalypsis/Furari/Ultima/Aeterna Luminis</ApocalypsisLuminisSTNL>
 	<!-- ====Goodwill Stuff==== -->

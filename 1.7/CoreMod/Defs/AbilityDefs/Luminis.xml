@@ -404,6 +404,7 @@
 				<entropyGain>200</entropyGain>
 				<prerequisites>
 					<li>VPE_SolarRiftSTNL</li>
+					<li>VPE_EnlightenSTNL</li>
 				</prerequisites>
 			</li>
 			<li Class="SentinelFramework_STNL.Ability_PassiveModExt">
@@ -482,7 +483,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_SunBeamSTNL</defName>
 	<label>Sun beam</label>
-	<description>Release a large concentration of photophagic mechanites above the target area, these mechanites will feast on available and release their stored energy to scorch the target area.</description>
+	<description>Release a large concentration of photophagic mechanites above the target area, these mechanites will feast on available light and release their stored energy to scorch the target area.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/SunBeam</iconPath>
 	<castTime>120</castTime>
 	<durationTime>900</durationTime>
@@ -522,10 +523,10 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 	<defName>VPE_UltimaLuminisSTNL</defName>
 	<label>Apocalypsis luminis</label>
-	<description>Release a large concentration of photophagic mechanites above the target area, these mechanites will feast on available light and release their stored energy to glass the target area. These mechanites will then go haywire and reproduce to spread themselves around the planet until they run out of energy, causing a global night time until they expire. Things within the inner radius of this ability will be eradicated, while things in the outer radius will take heavy damage.\n\nThe following photophagic eclipse will prevent sunlight from reaching the planet. If active, solar pinholes will be consumed by these mechanites and be forced to dissipate.</description>
+	<description>Release a large concentration of photophagic mechanites above the target area, these mechanites will feast on available light and release their stored energy to glass the target area. These mechanites will then go haywire and reproduce to spread themselves around the planet until they run out of energy, causing a global night time until they expire.\n\nAnything within the inner radius of this ability will be eradicated, while things in the outer radius will take heavy damage.\n\nThe following photophagic eclipse will prevent sunlight from reaching the planet. If active, solar pinholes will be consumed by these mechanites and be forced to dissipate, and certain abilities that rely on light will be unavailable.</description>
 	<iconPath>UI_LuminisSTNL/Abilities/Luminis/ApocalypsisLuminis</iconPath>
 	<castTime>200</castTime>
-	<durationTime>900000</durationTime>
+	<!-- <durationTime>900000</durationTime> -->
 	<targetMode>Location</targetMode>
 	<chance>0</chance>
 	<radius>15.9</radius>
@@ -560,7 +561,7 @@
 <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
 		<defName>VPE_AeternaLuminisSTNL</defName>
 		<label>Radiance</label>
-		<description>Ability augment: Radiant beacon now emits maximum light around the user while active, additionally grants the benefits of Light surge to nearby allies.\n\nAbility augment: Saving light now treats missing limbs if every wound in the target has been tended to. Doing so will put the target into a short regeneration coma, the duration of the coma scales inversely with the amount of light at the target's position.</description>
+		<description>Ability augment: Radiant beacon now emits maximum light around the user while active, additionally grants the benefits of Light surge to nearby allies. Light surge will be lost once Radiant beacon ends.\n\nAbility augment: Saving light now treats missing limbs if every wound in the target has been tended to. Doing so will put the target into a short regeneration coma, the duration of the coma scales inversely with the amount of light at the target's position.</description>
 		<iconPath>UI_LuminisSTNL/Abilities/Luminis/Radiance</iconPath>
 		<castTime>120</castTime>
 		<targetMode>Self</targetMode>
